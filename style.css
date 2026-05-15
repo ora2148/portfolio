@@ -1,3 +1,201 @@
+
+
+/* 전체 */
+body {
+    margin: 0;
+    padding: 40px 20px;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Helvetica, Arial, sans-serif;
+
+    background: #f5f7fa;
+    color: #222;
+}
+
+/* 헤더 */
+#header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    color: #111;
+}
+
+.job {
+    margin-top: 12px;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* 메인 카드 */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 35% 65%;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.06),
+        0 1px 2px rgba(0,0,0,0.04);
+}
+
+/* 왼쪽 */
+#mainLeft {
+    padding: 40px 30px;
+    background: #fafafa;
+    border-right: 1px solid #e5e7eb;
+}
+
+/* 오른쪽 */
+#mainRight {
+    padding: 40px;
+}
+
+/* 섹션 */
+section {
+    margin-bottom: 40px;
+}
+
+/* 제목 */
+h2 {
+    display: inline-block;
+
+    margin-bottom: 20px;
+    padding-bottom: 6px;
+
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+
+    color: #111;
+
+    border-bottom: 2px solid #2563eb;
+}
+
+/* 텍스트 */
+p,
+li {
+    color: #444;
+    line-height: 1.7;
+}
+
+/* 리스트 */
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* 프로젝트 카드 */
+.item {
+    margin-bottom: 24px;
+    padding: 22px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+/* 마우스 오버 */
+.item:hover {
+    transform: translateY(-6px);
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 18px 35px rgba(37,99,235,0.12),
+        0 8px 16px rgba(0,0,0,0.08);
+}
+
+/* 프로젝트 제목 */
+.item h3 {
+    margin: 0 0 8px;
+    font-size: 1.1rem;
+    color: #111;
+}
+
+/* 날짜 */
+.date {
+    margin-bottom: 12px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* 링크 */
+a {
+    color: #2563eb;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* 구분선 */
+hr {
+    border: none;
+    height: 1px;
+    background: #e5e7eb;
+}
+
+/* 부드러운 hover */
+section,
+#mainLeft,
+#mainRight {
+    transition: all 0.2s ease;
+}
+
+/* 반응형 */
+@media (max-width: 768px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #mainLeft {
+        border-right: none;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    #header h1 {
+        font-size: 2.2rem;
+    }
+
+    .item:hover {
+        transform: translateY(-3px);
+    }
+/* }
+
+
 /* GitHub Dark 스타일 기반 */
 
 /* 전체 */
@@ -175,4 +373,4 @@ hr {
     #header h1 {
         font-size: 2.2rem;
     }
-}
+} */
