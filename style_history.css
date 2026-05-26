@@ -130,8 +130,13 @@ main {
 }
 
 /* 프로젝트 이미지 */
+.project-image {
+    display: flex;
+    gap: 5px;
+}
+
 .project-image img {
-    width: 100%;
+    width: calc(50% - 2.5px);
     height: 100%;
 
     object-fit: cover;
@@ -139,7 +144,6 @@ main {
     border-radius: 10px;
     border: 1px solid #30363d;
 }
-
 /* 프로젝트 내용 */
 .project-content h3 {
     margin: 0 0 20px;
