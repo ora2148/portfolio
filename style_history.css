@@ -1,3 +1,5 @@
+/* GitHub Dark 스타일 기반 */
+
 /* 전체 */
 body {
     margin: 0;
@@ -20,172 +22,168 @@ body {
     margin: 0;
     font-size: 3rem;
     font-weight: 700;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.08rem;
     color: #f0f6fc;
 }
 
 .subtitle {
     margin-top: 12px;
     color: #8b949e;
+    font-size: 1rem;
 }
 
-/* 네비 */
+/* 네비게이션 */
 nav {
-    margin-top: 25px;
+    margin-top: 24px;
 }
 
 nav a {
+    display: inline-block;
+
+    padding: 10px 18px;
+
     color: #58a6ff;
     text-decoration: none;
-    margin: 0 10px;
-    transition: 0.2s ease;
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    border: 1px solid #30363d;
+    border-radius: 8px;
+
+    background: #161b22;
+
+    transition: all 0.2s ease;
 }
 
 nav a:hover {
-    color: #79c0ff;
+    background: #21262d;
+    border-color: #58a6ff;
 }
 
 /* 메인 */
 main {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 /* 섹션 */
-.history-section h2 {
-    margin-bottom: 30px;
+.history-section {
+    background: #161b22;
 
-    font-size: 1.1rem;
+    border: 1px solid #30363d;
+    border-radius: 16px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 0 0 1px rgba(240,246,252,0.02),
+        0 16px 40px rgba(0,0,0,0.45);
+}
+
+/* 섹션 제목 */
+.history-section h2 {
+    display: inline-block;
+
+    margin: 0 0 30px;
+    padding-bottom: 6px;
+
+    font-size: 1rem;
+    font-weight: 600;
     letter-spacing: 0.08rem;
 
     color: #f0f6fc;
 
-    border-bottom: 2px solid #58a6ff;
-
-    display: inline-block;
-    padding-bottom: 6px;
+    border-bottom: 2px solid #238636;
 }
 
 /* 프로젝트 카드 */
 .project-card {
-
     display: grid;
-    grid-template-columns: 380px 1fr;
-
+    grid-template-columns: 320px 1fr;
     gap: 30px;
 
-    margin-bottom: 35px;
-    padding: 25px;
+    margin-bottom: 30px;
+    padding: 24px;
 
-    background: #161b22;
+    background: #21262d;
 
     border: 1px solid #30363d;
-    border-radius: 18px;
+    border-radius: 14px;
 
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        border-color 0.25s ease;
+    transition: all 0.2s ease;
+}
+
+/* 마지막 카드 */
+.project-card:last-child {
+    margin-bottom: 0;
 }
 
 /* hover */
 .project-card:hover {
+    border-color: #238636;
 
-    transform: translateY(-6px);
-
-    border-color: #58a6ff;
+    transform: translateY(-2px);
 
     box-shadow:
-        0 18px 35px rgba(0,0,0,0.45),
-        0 0 0 1px rgba(88,166,255,0.15);
+        0 0 0 1px rgba(35,134,54,0.2),
+        0 8px 24px rgba(0,0,0,0.35);
 }
 
-/* 이미지 */
+/* 프로젝트 이미지 */
 .project-image img {
-
     width: 100%;
-    height: 260px;
+    height: 100%;
 
     object-fit: cover;
 
-    border-radius: 14px;
-
+    border-radius: 10px;
     border: 1px solid #30363d;
 }
 
 /* 프로젝트 내용 */
 .project-content h3 {
+    margin: 0 0 20px;
 
-    margin-top: 0;
-    margin-bottom: 20px;
-
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
 
     color: #f0f6fc;
 }
 
-/* 정보 */
+/* 정보 블록 */
 .info {
     margin-bottom: 22px;
 }
 
-.more-button {
-
-    padding: 8px 14px;
-
-    background: #238636;
-
-    border-radius: 8px;
-
-    color: white;
-    text-decoration: none;
-
-    font-size: 0.9rem;
-    font-weight: 600;
-
-    transition:
-        transform 0.2s ease,
-        background 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-/* hover */
-.more-button:hover {
-
-    transform: translateY(-2px);
-
-    background: #2ea043;
-
-    box-shadow:
-        0 8px 16px rgba(35,134,54,0.35);
-}
-
-
+/* 라벨 */
 .label {
-
     display: inline-block;
 
     margin-bottom: 10px;
+    padding: 4px 10px;
 
-    font-size: 0.95rem;
-    font-weight: 700;
+    font-size: 0.85rem;
+    font-weight: 600;
 
-    color: #79c0ff;
+    color: #7ee787;
+
+    background: rgba(35, 134, 54, 0.15);
+
+    border: 1px solid rgba(35, 134, 54, 0.4);
+    border-radius: 999px;
 }
 
 /* 텍스트 */
 p,
 li {
-
+    margin: 0;
     color: #c9d1d9;
-
     line-height: 1.7;
 }
 
 /* 리스트 */
 ul {
-
-    margin: 0;
+    margin: 10px 0 0;
     padding-left: 20px;
 }
 
@@ -194,27 +192,26 @@ li {
 }
 
 /* 반응형 */
-@media (max-width: 900px) {
-
-    .project-card {
-
-        grid-template-columns: 1fr;
-    }
-
-    .project-image img {
-
-        height: 220px;
-    }
-}
-
 @media (max-width: 768px) {
 
     body {
-        padding: 20px 14px;
+        padding: 20px 12px;
     }
 
     .top h1 {
         font-size: 2.2rem;
+    }
+
+    .history-section {
+        padding: 24px;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image img {
+        max-height: 220px;
     }
 
     .project-content h3 {
