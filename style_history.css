@@ -195,6 +195,53 @@ li {
     margin-bottom: 8px;
 }
 
+/* 연도 탭 */
+.year-tabs {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 24px;
+}
+
+/* 버튼 */
+.year-btn {
+    padding: 10px 18px;
+
+    background: #161b22;
+    color: #c9d1d9;
+
+    border: 1px solid #30363d;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+/* hover */
+.year-btn:hover {
+    border-color: #58a6ff;
+}
+
+/* 활성 버튼 */
+.year-btn.active {
+    background: #238636;
+    color: #ffffff;
+
+    border-color: #238636;
+}
+
+/* 기본 숨김 */
+.history-section {
+    display: none;
+}
+
+/* 활성 section */
+.history-section.active {
+    display: block;
+}
+
+
 /* 반응형 */
 @media (max-width: 768px) {
 
