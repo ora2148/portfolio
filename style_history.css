@@ -246,6 +246,27 @@ li {
     margin: 0 auto 24px;
 }
 
+
+.project-images{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+}
+
+.top-images{
+    display:flex;
+    gap:5px;
+}
+
+.top-images img{
+    width:50%;
+    object-fit:cover;
+}
+
+.bottom-image{
+    width:100%;
+    object-fit:cover;
+}
 /* 반응형 */
 @media (max-width: 768px) {
 
