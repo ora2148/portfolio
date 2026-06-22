@@ -144,6 +144,17 @@ main {
     border-radius: 10px;
     border: 1px solid #30363d;
 }
+
+.project-image video {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+    border: 1px solid #30363d;
+}
+
 /* 프로젝트 내용 */
 .project-content h3 {
     margin: 0 0 20px;
