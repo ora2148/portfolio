@@ -131,8 +131,8 @@ main {
     gap:16px;
 }
 .info-line{
-    display:flex;
-    justify-content:space-between;
+    display:grid;
+    grid-template-columns: 420px 420px;
     gap:40px;
 }
 
