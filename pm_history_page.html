@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project History | 김인호</title>
+
+    <link rel="stylesheet" href="style_pm_history.css">
+</head>
+
+<body>
+
+    <!-- 헤더 -->
+    <header class="top">
+        <h1>PROJECT HISTORY</h1>
+
+        <p class="subtitle">
+            Development · PM · Portfolio
+        </p>
+
+        <nav>
+            <a href="index.html">HOME</a>
+        </nav>
+    </header>
+
+    <!-- 연도 버튼 -->
+    <div class="year-tabs">
+        <button class="year-btn active" data-year="highlight">Highlight</button>
+
+        <button class="year-btn " data-year="2025">2025</button>
+        <button class="year-btn" data-year="2024">2024</button>
+        <button class="year-btn" data-year="2023">2023</button>
+        <button class="year-btn" data-year="2022">2022</button>
+        <button class="year-btn" data-year="2021">2021</button>
+        <button class="year-btn" data-year="2020">2020</button>
+
+    </div>
+
+    <main>
+
+        <!-- highlight -->
+        <section class="history-section active" id="highlight">
+
+            <h2>PROJECTS · HIGHLIGHT</h2>
+
+          
+
+            
+
+  <div class="project-card">
+
+    <h3>LS전선 교육용 시뮬레이션 어플리케이션 개발</h3>
+
+    <div class="project-info">
+
+        <div class="info-row">
+            <span class="label">기간</span>
+            <p>2021.06 ~ 2021.09</p>
+        </div>
+
+        <div class="info-row">
+            <span class="label">역할</span>
+            <p>Project Manager / Android Developer</p>
+        </div>
+
+        <div class="info-row">
+            <span class="label">규모</span>
+            <p>8명</p>
+        </div>
+
+        <div class="info-row">
+            <span class="label">고객</span>
+            <p>LS전선</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="project-section">
+
+        <h4>담당 업무</h4>
+
+        <ul>
+            <li>프로젝트 일정 관리 및 산출물 관리</li>
+            <li>고객 요구사항 분석 및 협의</li>
+            <li>개발 일정 및 이슈 관리</li>
+            <li>QA 진행 및 배포 관리</li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <div class="project-section">
+
+        <h4>주요 성과</h4>
+
+        <ul>
+            <li>프로젝트 일정 내 구축 완료</li>
+            <li>고객 요구사항 100% 반영</li>
+            <li>개발 일정 지연 없이 오픈</li>
+        </ul>
+
+    </div>
+
+</div>
+        </section>
+
+
+
+
+
+
+        <!-- 2024 -->
+        <section class="history-section" id="2024">
+
+            <h2>PROJECTS · 2024</h2>
+
+            
+
+        </section>
+
+
+        <!-- 2023 -->
+        <section class="history-section" id="2023">
+            <h2>PROJECTS · 2023</h2>
+            <p>2023 프로젝트 내용</p>
+        </section>
+
+
+
+        <!-- 2022 -->
+        <section class="history-section" id="2022">
+            <h2>PROJECTS · 2022</h2>
+
+
+  
+
+
+
+              
+
+
+
+        </section>
+
+
+    <section class="history-section" id="2020">
+                <h2>PROJECTS · 2020</h2>
+
+
+
+
+  <div class="project-card">
+
+                <div class="project-image">
+                    <img src="https://ora2148.github.io/portfolio/images/1.BWI.webp" alt="">
+                    <img src="https://ora2148.github.io/portfolio/images/2.BWI.webp" alt="">
+                </div>
+
+                
+
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </section>
+
+    </main>
+
+    <script>
+
+        const buttons = document.querySelectorAll('.year-btn');
+        const sections = document.querySelectorAll('.history-section');
+
+        buttons.forEach(button => {
+
+            button.addEventListener('click', () => {
+
+                const targetYear = button.dataset.year;
+
+                buttons.forEach(btn => {
+                    btn.classList.remove('active');
+                });
+
+                sections.forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                button.classList.add('active');
+
+                document
+                    .getElementById(targetYear)
+                    .classList.add('active');
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
