@@ -275,6 +275,9 @@ li {
     flex-direction:column;
     gap:8px;
 }
+.project-image.column img{
+    width:100%;
+}
 
 .top-images img{
     width:50%;
