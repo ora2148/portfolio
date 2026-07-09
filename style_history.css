@@ -269,6 +269,13 @@ li {
     gap:5px;
 }
 
+/* 세로 */
+.project-image.column{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
 .top-images img{
     width:50%;
     object-fit:cover;
